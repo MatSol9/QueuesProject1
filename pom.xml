@@ -7,6 +7,19 @@
     <groupId>groupId</groupId>
     <artifactId>QueuesProject1</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
@@ -55,10 +68,14 @@
             <version>5.3.23</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>queue.project</groupId>
+            <artifactId>QueueProjectModel</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
     <properties>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 </project>
