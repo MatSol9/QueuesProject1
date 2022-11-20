@@ -3,3 +3,9 @@ server:
 
 connections:
   proxy: http://localhost:8081
+
+spring:
+  task:
+    scheduling:
+      pool:
+        size: 1000
